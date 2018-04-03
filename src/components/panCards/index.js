@@ -10,7 +10,7 @@ import {
     Dimensions
 } from 'react-native';
 
-import PanCmpt from '../panCard';
+import PanCmpt from './panCard.js';
 
 
 const {width} = Dimensions.get('window');

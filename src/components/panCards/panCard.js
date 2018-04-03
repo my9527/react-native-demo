@@ -168,8 +168,9 @@ export default class PanCmpt extends React.Component {
             pos: {_previousLeft, _previousTop, lastLeft, lastTop}
 
         });
-        
+
         this.animation(_previousLeft, lastTop).start(() => {
+            this.props.moving && this.props.moving(_previousLeft);
             needRemove && this.props.removeHandle && this.props.removeHandle();
 
         });
